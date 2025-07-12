@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 # =====================
 # Load & Prepare Data
 # =====================
-df = pd.read_csv("bike.csv")
+df = pd.read_csv("dashboard/bike.csv")
 df["date"] = pd.to_datetime(df["date"])
 df["day_name"] = df["date"].dt.day_name().str.lower()
 df["month_name"] = df["date"].dt.month_name().str.lower()
