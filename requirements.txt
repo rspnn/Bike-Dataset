@@ -4,3 +4,4 @@ pandas
 seaborn==0.13.0
 plotly
 streamlit==1.30.0
+setuptools==80.9.0
