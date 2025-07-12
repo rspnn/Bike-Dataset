@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Load data
-df = pd.read_csv("./bike.csv")
+df = pd.read_csv("dashboard/bike.csv")
 
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
