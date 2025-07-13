@@ -3,11 +3,12 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import os
 
 # =====================
 # Load & Prepare Data
 # =====================
-df = pd.read_csv("bike.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), "bike.csv"))
 df["date"] = pd.to_datetime(df["date"])
 df["day_name"] = df["date"].dt.day_name().str.lower()
 df["month_name"] = df["date"].dt.month_name().str.lower()
